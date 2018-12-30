@@ -2,6 +2,14 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
+    <PackageId>AmbientWx</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>DriverWare</Authors>
+    <PackageDescription>A .Net Core SDK for accessing a personal weather station from
+     Ambient Weather</PackageDescription>
+     <RepositoryUrl>https://github.com/tdriver/DriverWx</RepositoryUrl>
+     <PackageTags>Weather;Ambient Weather;AmbientWeather;AmbientWx;Weather SDK</PackageTags>
+     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
