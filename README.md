@@ -1,7 +1,6 @@
 # AmbientWx
 ## A .Net Core SDK for AmbientWeather.net API
-This SDK allows a .Net Core developer to use the API provided by AmbientWeather.net to retrieve weather results from
-their personal weather station.
+This SDK allows a .Net Core developer to use the API provided by AmbientWeather.net to retrieve weather results from their personal weather station.
 To use this SDK, you must create a file named AmbientWx.config and place it in the folder with the AmbientWx.dll file.
 The config file contents should look like this:
 ```xml
@@ -14,12 +13,10 @@ The config file contents should look like this:
   </appSettings>
 </configuration>
 ```
-Be sure to use your apiKey and applicationKey provided by AmbientWeather.net.  See their API documentation page 
-[here](https://ambientweather.docs.apiary.io/#) for more information.
+Be sure to use your apiKey and applicationKey provided by AmbientWeather.net.  See their API documentation page [here](https://ambientweather.docs.apiary.io/#) for more information.
 
 ## How to use the API
-Search for AmbientWx on Nuget, then install the package.  Since this is .Net Core, it is usable on Windows, MAcs and 
-Linux platforms.
+Search for AmbientWx on Nuget, then install the package.  Since this is .Net Core, it is usable on Windows, Mac and Linux platforms.
 Example call:
 First, ensure you're AmbientWx.config is in place.
 Then, in your code, make this call:

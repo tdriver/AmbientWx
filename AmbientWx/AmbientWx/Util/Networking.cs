@@ -11,7 +11,7 @@ using Newtonsoft.Json;
 namespace AmbientWx.Util
 {
     /// <summary>
-    /// Utilities to help create the service call.
+    /// Utilities to help create the service calls.
     /// </summary>
     public static class Networking
     {
