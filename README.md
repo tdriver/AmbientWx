@@ -15,7 +15,7 @@ The config file contents should look like this:
 </configuration>
 ```
 Be sure to use your apiKey and applicationKey provided by AmbientWeather.net.  See their API [documentation page](https://ambientweather.docs.apiary.io/#) for more information.
-The MacAddress in the config file is optional.  If it is not supplied here, you will have to provide it when making a DeviceDataRequest.
+The MacAddress in the config file is optional.  If it is not supplied here, you will have tootnet provide it when making a DeviceDataRequest.
 
 ## How to use the API
 Search for AmbientWx on Nuget, then install the package.  Since this is .Net Core, it is usable on Windows, Mac and Linux platforms.

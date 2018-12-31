@@ -10,7 +10,7 @@
     <LicenseUrl>https://github.com/tdriver/AmbientWx/blob/master/LICENSE</LicenseUrl>
     <PackageTags>Weather;Ambient Weather;AmbientWeather;AmbientWx;Weather SDK</PackageTags>
     <PackageReleaseNotes>Adding Device Data API.</PackageReleaseNotes>
-    <license type="expression">GPL-3.0</license>
+    <license>GPL-3.0</license>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
