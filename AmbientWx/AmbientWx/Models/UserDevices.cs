@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Globalization;
+using AmbientWx.Util;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 
@@ -98,29 +99,5 @@ namespace AmbientWx.Models
 
         [JsonProperty("dewPoint")]
         public double DewPoint { get; set; }
-    }
-
-    public partial class UserDevices
-    {
-        public static List<UserDevices> FromJson(string json) =>
-                    JsonConvert.DeserializeObject<List<UserDevices>>(json, Converter.Settings);
-    }
-
-    public static class Serialize
-    {
-        public static string ToJson(this List<UserDevices> self) =>
-                    JsonConvert.SerializeObject(self, Converter.Settings);
-    }
-
-    internal static class Converter
-    {
-        public static readonly JsonSerializerSettings Settings = new JsonSerializerSettings
-        {
-            MetadataPropertyHandling = MetadataPropertyHandling.Ignore,
-            DateParseHandling = DateParseHandling.None,
-            Converters = {
-                new IsoDateTimeConverter { DateTimeStyles = DateTimeStyles.AssumeUniversal }
-            },
-        };
     }
 }

@@ -9,11 +9,13 @@ The config file contents should look like this:
   <appSettings>
     <add key="ApiKey" value="Your Api Key" />
     <add key="ApplicationKey" value="Your Application Key" />
+    <add key="MacAddress" value="Your device MacAddress" />
     <add key="BaseUrl" value="https://api.ambientweather.net" />
   </appSettings>
 </configuration>
 ```
-Be sure to use your apiKey and applicationKey provided by AmbientWeather.net.  See their API documentation page [here](https://ambientweather.docs.apiary.io/#) for more information.
+Be sure to use your apiKey and applicationKey provided by AmbientWeather.net.  See their API [documentation page](https://ambientweather.docs.apiary.io/#) for more information.
+The MacAddress in the config file is optional.  If it is not supplied here, yo will have ot provide it when making a DeviceDataRequest.
 
 ## How to use the API
 Search for AmbientWx on Nuget, then install the package.  Since this is .Net Core, it is usable on Windows, Mac and Linux platforms.
@@ -28,7 +30,7 @@ See the source code tests for usage as well.
 
 ## APIs implemented to date:
 + UserDevices
++ Device Data
 
 ## APIs Coming Soon
-+ Device Data
 + Real Time

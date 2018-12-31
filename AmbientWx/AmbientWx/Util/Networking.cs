@@ -18,6 +18,7 @@ namespace AmbientWx.Util
         public static string ApiKey { get; set; }
         public static string ApplicationKey { get; set; }
         public static Uri BaseUri { get; set; }
+        public static string MacAddress { get; set; }
 
         static Networking()
         {
@@ -40,8 +41,10 @@ namespace AmbientWx.Util
                 if (string.IsNullOrEmpty(ApplicationKey))
                 {
                     throw new ArgumentNullException("The ApplicationKey is not defined in the configuration file.");
-                }               
+                } 
 
+                MacAddress = asc.Settings["MacAddress"].Value;
+                
                 var url = asc.Settings["BaseUrl"].Value;
                 if (string.IsNullOrEmpty(url))
                 {
@@ -129,10 +132,10 @@ namespace AmbientWx.Util
                 if(queryParameters.Length % 2 != 0)
                     throw new ArgumentException("queryParameters must be an even-numbered list of key/value pairs.");
 
-                for (int i = 0; i < queryParameters.Length; i++)
+                for (int i = 0; i < queryParameters.Length - 1; i++)
                 {
-                    query.AppendJoin("&",queryParameters[i]);
-                    query.AppendJoin("=",queryParameters[i+1]);
+                    query.Append("&"+queryParameters[i]);
+                    query.Append("="+queryParameters[i+1]);
                 }               
             }
             return new Uri(BaseUri, relativeUri + query.ToString());

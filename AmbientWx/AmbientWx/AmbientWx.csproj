@@ -3,13 +3,14 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
     <PackageId>AmbientWx</PackageId>
-    <Version>1.1.1</Version>
+    <Version>1.2.0</Version>
     <Authors>DriverWare</Authors>
     <PackageDescription>A .Net Core SDK for accessing a personal weather station from Ambient Weather</PackageDescription>
     <RepositoryUrl>https://github.com/tdriver/AmbientWx</RepositoryUrl>
     <LicenseUrl>https://github.com/tdriver/AmbientWx/blob/master/LICENSE</LicenseUrl>
     <PackageTags>Weather;Ambient Weather;AmbientWeather;AmbientWx;Weather SDK</PackageTags>
-    <PackageReleaseNotes>Updating documentation and package configuration settings.</PackageReleaseNotes>
+    <PackageReleaseNotes>Adding Device Data API.</PackageReleaseNotes>
+    <license type="expression">GPL-3.0</license>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
