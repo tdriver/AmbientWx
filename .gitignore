@@ -333,3 +333,7 @@ ASALocalRun/
 # Local History for Visual Studio
 .localhistory/
 AmbientWx/AmbientWx/AmbientWx.config
+
+# No Sandbox
+SandBox/*
+
