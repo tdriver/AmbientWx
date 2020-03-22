@@ -1,8 +1,5 @@
-using System;
-using System.Collections.Generic;
-using System.Globalization;
 using Newtonsoft.Json;
-using Newtonsoft.Json.Converters;
+using System;
 
 namespace AmbientWx.Models
 {
@@ -20,9 +17,6 @@ namespace AmbientWx.Models
         [JsonProperty("weeklyrainin")]
         public double Weeklyrainin { get; set; }
 
-        [JsonProperty("tempfin")]
-        public double Tempfin { get; set; }
-
         [JsonProperty("baromrelin")]
         public double Baromrelin { get; set; }
 
@@ -37,6 +31,9 @@ namespace AmbientWx.Models
 
         [JsonProperty("tempf")]
         public double Tempf { get; set; }
+
+        [JsonProperty("humidity")]
+        public double Humidity { get; set; }
 
         [JsonProperty("yearlyrainin")]
         public double Yearlyrainin { get; set; }
@@ -58,6 +55,9 @@ namespace AmbientWx.Models
 
         [JsonProperty("tempinf")]
         public double Tempinf { get; set; }
+
+        [JsonProperty("humidityin")]
+        public double Humidityin { get; set; }
 
         [JsonProperty("dewPoint")]
         public double DewPoint { get; set; }
@@ -223,5 +223,10 @@ namespace AmbientWx.Models
 
         [JsonProperty("relay10")]
         public bool Relay10 { get; set; }
+
+        public override string ToString()
+        {
+            return JsonConvert.SerializeObject(this,Formatting.Indented);
+        }
     }
 }

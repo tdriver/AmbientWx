@@ -1,10 +1,6 @@
 ﻿
-using System;
-using System.Collections.Generic;
-using System.Globalization;
-using AmbientWx.Util;
 using Newtonsoft.Json;
-using Newtonsoft.Json.Converters;
+using System;
 
 namespace AmbientWx.Models
 {

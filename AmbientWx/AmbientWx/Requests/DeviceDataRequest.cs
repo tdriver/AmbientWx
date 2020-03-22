@@ -31,9 +31,9 @@ namespace AmbientWx.Requests
 
             // generate the query parameters
             var qp = new List<string>();
-            if(endDate != null && endDate.HasValue){
+            if(endDate.HasValue){
                 qp.Add("endDate");
-                qp.Add(endDate.Value.ToUniversalTime().ToString("o"));
+                qp.Add(endDate.Value.ToUniversalTime().ToUnixTimeMilliseconds().ToString());
             }
             qp.Add("limit");
             qp.Add(limit.ToString());
