@@ -1,15 +1,15 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.1</TargetFramework>
+    <TargetFramework>netstandard2.0</TargetFramework>
     <PackageId>AmbientWx</PackageId>
-    <Version>2.0</Version>
+    <Version>2.1</Version>
     <Authors>DriverWare</Authors>
     <PackageDescription>A .Net Standard SDK for accessing a personal weather station from Ambient Weather</PackageDescription>
     <RepositoryUrl>https://github.com/tdriver/AmbientWx</RepositoryUrl>
     <LicenseUrl>https://github.com/tdriver/AmbientWx/blob/master/LICENSE</LicenseUrl>
     <PackageTags>Weather;Ambient Weather;AmbientWeather;AmbientWx;Weather SDK</PackageTags>
-    <PackageReleaseNotes>Adding Device Data API.</PackageReleaseNotes>
+    <PackageReleaseNotes>Reverting to .NetStandard 2.0, for wider applicability.</PackageReleaseNotes>
     <license>GPL-3.0</license>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
