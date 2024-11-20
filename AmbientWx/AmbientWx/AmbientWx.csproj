@@ -3,20 +3,20 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <PackageId>AmbientWx</PackageId>
-    <Version>2.1</Version>
-    <Authors>DriverWare</Authors>
+    <Version>2.1.1</Version>
+    <Authors>Ted Driver</Authors>
     <PackageDescription>A .Net Standard SDK for accessing a personal weather station from Ambient Weather</PackageDescription>
     <RepositoryUrl>https://github.com/tdriver/AmbientWx</RepositoryUrl>
     <LicenseUrl>https://github.com/tdriver/AmbientWx/blob/master/LICENSE</LicenseUrl>
     <PackageTags>Weather;Ambient Weather;AmbientWeather;AmbientWx;Weather SDK</PackageTags>
-    <PackageReleaseNotes>Reverting to .NetStandard 2.0, for wider applicability.</PackageReleaseNotes>
+    <PackageReleaseNotes>Updating referenced libraries</PackageReleaseNotes>
     <license>GPL-3.0</license>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
-    <PackageReference Include="System.Configuration.ConfigurationManager" Version="8.0.0" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="9.0.0" />
   </ItemGroup>
 
   <ItemGroup>
