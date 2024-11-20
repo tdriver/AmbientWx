@@ -12,7 +12,17 @@
     <PackageReleaseNotes>Updating referenced libraries</PackageReleaseNotes>
     <license>GPL-3.0</license>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Title>Ambient Weather Station Data API</Title>
+    <Description>An API for Ambient Weather stations to get your weather data.</Description>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
