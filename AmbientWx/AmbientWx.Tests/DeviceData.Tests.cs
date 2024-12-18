@@ -15,5 +15,14 @@ namespace AmbientWx.Tests
             Assert.That(myData[0].Baromabsin > 0);
             Assert.That(myData[287].Baromabsin > 0);
         }
+
+        [Test]
+        public void TestDeviceDataCurrentDate()
+        {
+            var myData = DeviceDataRequest.GetDeviceData();
+            Assert.That(myData.Count == 288);
+            Assert.That(myData[0].Baromabsin > 0);
+            Assert.That(myData[287].Baromabsin > 0);
+        }
     }
 }
